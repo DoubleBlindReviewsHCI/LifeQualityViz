@@ -1,0 +1,94 @@
+<head>
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Roboto:900,400,300,100' type='text/css'>
+  <link rel="import" href="bower_components/paper-spinner/paper-spinner.html">
+  <link rel="import" href="bower_components/paper-checkbox/paper-checkbox.html">
+  <link rel="import" href="bower_components/paper-ripple/paper-ripple.html">
+  <link rel="import" href="bower_components/paper-progress/paper-progress.html">
+  <link rel="import" href="bower_components/paper-button/paper-button.html">
+  <link rel="import" href="bower_components/paper-radio-button/paper-radio-button.html">
+  <link rel="import" href="bower_components/paper-input/paper-input.html">
+  <script src="https://use.fontawesome.com/177def29e7.js"></script>
+  <title>Quality of Life</title>
+  <style is="custom-style">
+  paper-checkbox { color: #424242; }
+  paper-checkbox.polluted{ --paper-checkbox-unchecked-color: #377eb8; --paper-checkbox-checked-color:   #377eb8; }
+  paper-checkbox.traffic { --paper-checkbox-unchecked-color: #c0392b; --paper-checkbox-checked-color:   #c0392b; }
+  paper-checkbox.safety  { --paper-checkbox-unchecked-color: #FABE0F; --paper-checkbox-checked-color:   #FABE0F; }
+  paper-checkbox.health  { --paper-checkbox-unchecked-color: #4daf4a; --paper-checkbox-checked-color:   #4daf4a; }
+  </style>
+</head>
+
+<body>
+  <div class="welcome-screen">
+    <div class="loading-screen">
+      <paper-spinner active></paper-spinner>
+    </div>
+  </div>
+  <div class="big-thanks" style="display: none;">
+    <div class="big-thanks-container">
+      <h1 style="font-size: 32px;">Thank you!</h1>
+      <h1 style="width: 500px; font-size: 24px;">Your Amazon mTurk code is: <b>{{assignment}}</b></h1>
+      <h2 style="width: 500px;"><h2 style="color: red; font-size: 32px;">Warning!</h2> <p style="font-size: 16px;">In order to get your <b>reward</b> you still have to <b style="color: red;">complete the following questionnaire:</b></p></h2>
+      <h2 style="width: 500px; background: #e1e1e1; padding: 10px;"><b>Important:</b> Please make sure you copy your code or note it down somewhere. You will need it in the following questionnaire and in order to get a reward.</h2>
+      <h2 style="width: 500px;">Please <a class="gurl" href="{{googleform}}" target="_blank"><b>CLICK HERE</b></a> to answer the <b>short questionnaire.</b></h2>
+    </div>
+  </div>
+</body>
+
+<template name="regression">
+  <div class="content-left">{{>navfilter}}</div>
+  <div class="content-mid">
+    <div class="content-mid-regression">
+      <div class="start-question-container"></div>
+      <div>
+        {{>lifequality cityname="seattle"}}
+        {{>lifequality cityname="angeles"}}
+      </div>
+      <div>
+        {{>lifequality cityname="denver"}}
+        {{>lifequality cityname="houston"}}
+      </div>
+      <div>
+        {{>lifequality cityname="newyork"}}
+        {{>lifequality cityname="atlanta"}}
+      </div>
+    </div>
+    {{>bigquestion}}
+  </div>
+</template>
+
+<template name="map">
+  <div class="content-left" style="height: 600px;">{{>navfilter}}</div>
+  <div class="content-mid"  style="width:  550px; height: 620px;">
+    <div class="content-mid-map">
+      <div class="start-question-container"></div>
+      {{>sentimentmap}}
+      <br>
+      {{>bigquestion}}
+    </div>
+  </div>
+</template>
+
+<template name="dots">
+  <div class="content-left">{{>navfilter}}</div>
+  <div class="content-mid">
+    <div class="content-mid-dotplot">
+      <div class="start-question-container"></div>
+      <div>
+        {{>dotplot cityname="seattle"}}
+        {{>dotplot cityname="angeles"}}
+      </div>
+      <div>
+        {{>dotplot cityname="denver"}}
+        {{>dotplot cityname="houston"}}
+      </div>
+      <div>
+        {{>dotplot cityname="newyork"}}
+        {{>dotplot cityname="atlanta"}}
+      </div>
+    </div>
+    {{>bigquestion}}
+  </div>
+</template>
+
+<template name="dummy"></template>

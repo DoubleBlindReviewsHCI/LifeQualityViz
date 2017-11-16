@@ -1,0 +1,104 @@
+
+paper-button {
+  border: 1px solid #A1A1A1;
+  width: 90px;
+  margin-top: 20px;
+}
+
+.welcome-description {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-description paper-button {
+  display: none;
+}
+
+.welcome-content {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-content h1 {
+  padding: 0px;
+}
+
+.skip-tutorial {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 1px solid #A1A1A1;
+  align-self: flex-end;
+}
+
+.welcome-description paper-input {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.welcome-content h1 {
+  padding: 0;
+  text-align: center;
+}
+
+
+#test-slider1 {
+  margin-top: 20px;
+  width: 400px;
+  height: 10px;
+}
+
+#test-slider2 {
+  margin-top: 20px;
+  width: 400px;
+  height: 10px;
+}
+
+#test-slider3 {
+  margin-top: 20px;
+  width: 400px;
+  height: 10px;
+}
+
+.tutorial-test img {
+  align-self: center;
+}
+
+.tutorial-test {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: default;
+}
+
+.tutorial-success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #27ae60;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tutorial-success paper-button {
+  color: #424242;
+  display: block;
+}
+
+#test-slider3 .noUi-connect {
+  background: grey;
+}
+
+.slider-container input {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.slider-container label {
+  cursor: pointer;
+}

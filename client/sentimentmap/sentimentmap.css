@@ -1,0 +1,267 @@
+#map {
+  min-width: 650px !important;
+  background: #a1a1a1;
+  cursor: default;
+  align-self: flex-start;
+}
+
+.tweet-text { margin-right: 5px; color: #b2b2b2; }
+.tweet-date { margin-right: 5px; color: #b2b2b2; }
+.tweet-track { margin-right: 5px; color: #b2b2b2;}
+.tweet-coordinates { margin-right: 5px; color: #b2b2b2; }
+.tweet-sentiment {display: none;}
+
+.tweet-face {
+  background: #ffdc86;
+  border-radius:  50%;
+  /*border: 1px solid #ffbe20;*/
+  transition: all 300ms ease-out;
+  background-image: url("/faces/demo.png");
+  background-size:80%;
+  background-repeat: no-repeat;
+  background-position:  center;
+}
+
+.atlanta_css {
+  background: #ffdc86;
+  border-radius:  50%;
+  /*border: 1px solid #ffbe20;*/
+  transition: all 300ms ease-out;
+  background-image: url("/faces/12.png");
+  background-size:80%;
+  background-repeat: no-repeat;
+  background-position:  center;
+}
+
+.seattle_css {
+  background: #ffdc86;
+  border-radius: 50%;
+  /*border: 1px solid #ffbe20;*/
+  transition: all 300ms ease-out;
+  background-image: url("/faces/12.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position:  center;
+}
+
+.denver_css {
+  background: #ffdc86;
+  border-radius: 50%;
+  /*border: 1px solid #ffbe20;*/
+  transition: all 300ms ease-out;
+  background-image: url("/faces/12.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.houston_css {
+  background: #ffdc86;
+  border-radius:  50%;
+  /*border: 1px solid #ffbe20;*/
+  transition: all 300ms ease-out;
+  background-image: url("/faces/12.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position:  center;
+}
+
+.newyork_css {
+  background: #ffdc86;
+  border-radius:  50%;
+  /*border: 1px solid #ffbe20;*/
+  transition: all 300ms ease-out;
+  background-image: url("/faces/12.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position:  center;
+}
+
+.angeles_css {
+  background: #ffdc86;
+  border-radius:  50%;
+  /*border: 1px solid #ffbe20;*/
+  transition: all 300ms ease-out;
+  background-image: url("/faces/12.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position:  center;
+}
+
+
+.sm-bot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sm-dimensions {
+  display: flex;
+  font-size: 10px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  max-height: 30px;
+  margin-top: 3px;
+}
+
+.sm-d {
+  height: 30px;
+  width:  30px;
+  border-radius: 50%;
+  background: #ffdc86;
+  /*border: 1px solid #ffbe20;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:  6px;
+  padding: 3px;
+}
+
+.sm-d-container {
+  min-width:  30px;
+  min-height: 30px;
+  max-width:  30px;
+  max-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leaflet-marker-icon p {
+  margin: 0 0 10px;
+  position: absolute;
+  bottom: -27px;
+  right: -12px;
+  width: 68px;
+  text-align: center;
+  font-size: 11px;
+}
+
+.sm-d img {
+  width: 22px;
+}
+
+.sm-e {
+  width:  30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+}
+
+.sm-t {
+  font-weight: 300;
+  text-align: right;
+  min-height: 30px;
+  max-height: 30px;
+  width: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 13px;
+}
+
+.sentimentmap-legend {
+  margin-top: -90px;
+  cursor: default;
+  display: flex;
+  align-items: flex-end;
+  right: 90px;
+  position: absolute;
+}
+
+.vp-vertical-container {
+  display: flex;
+  position: absolute;
+  left: 70px;
+  top: -24px;
+  transition: all 300ms ease-out;
+}
+
+.leaflet-marker-icon:focus {
+  outline: none;
+  cursor: default;
+}
+
+.leaflet-marker-icon {
+  cursor: default;
+}
+
+.vp-vertical-container span {
+  display: flex;
+  transform: rotate(-90deg);
+  color: #a1a1a1;
+  position: absolute;
+  left: -38px;
+  top: 17px;
+  background: white;
+}
+
+.vp-vertical {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  background: white;
+  justify-content: space-between;
+  height: 100%;
+  align-items: inherit;
+  transition: all 300ms ease-out;
+}
+
+.vp-lwr {
+  padding-left: 3px;
+  height: 20px;
+  display: flex;
+  align-items: flex-end;
+  font-size: 10px;
+  color: #A1A1A1;
+}
+
+.vp-mdl {
+  padding-left: 3px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+
+.vp-upr {
+  padding-left: 3px;
+  height: 20px;
+  display: flex;
+  font-size: 10px;
+  align-items: flex-start;
+  color: #A1A1A1;
+}
+
+.vp-d {
+  font-size: 9px;
+  color: #a1a1a1;
+}
+
+.ubox {
+  width: 5px;
+  height: 100%;
+  transition: all 300ms ease-out;
+}
+
+.ubox-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  transition: all 300ms ease-out;
+}
+
+.leaflet-marker-icon {
+  display: none;
+  cursor: default;
+  width: 45px  !important;
+  height: 45px !important;
+}
+
+.leaflet-container .leaflet-control-attribution, .leaflet-container .leaflet-control-scale {
+  font-size: 11px;
+  display: none;
+}
