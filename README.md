@@ -1,6 +1,6 @@
 # LifeQualityViz
 
-The dashboards are available online in the following links:
+The dashboards are *available online* in the following links:
 
 - http://life.ahci.work/intuitive
 - http://life.ahci.work/detailed
