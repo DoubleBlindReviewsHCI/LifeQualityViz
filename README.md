@@ -2,9 +2,9 @@
 
 The dashboards are available online in the following links:
 
-http://life.ahci.work/intuitive
-http://life.ahci.work/detailed
-http://life.ahci.work/compact
+- http://life.ahci.work/intuitive
+- http://life.ahci.work/detailed
+- http://life.ahci.work/compact
 
 A dashboard to predict people's happiness in different cities across the U.S. using different viusalizations.
 
