@@ -3,7 +3,7 @@
 The dashboards are **available online** in the following links:
 
 - Intuitive: http://life.ahci.work/map
-- Detailed:  http://life.ahci.work/charts
+- Detailed:  http://life.ahci.work/chart
 - Compact:   http://life.ahci.work/dots
 
 A dashboard to predict people's happiness in different cities across the U.S. using different viusalizations.
