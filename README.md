@@ -2,9 +2,9 @@
 
 The dashboards are **available online** in the following links:
 
-- Intuitive: http://18.217.101.188/map
-- Detailed:  http://18.217.101.188/chart
-- Compact:   http://18.217.101.188/dots
+- Intuitive: http://18.217.101.188:4000/map
+- Detailed:  http://18.217.101.188:4000/chart
+- Compact:   http://18.217.101.188:4000/dots
 
 A dashboard to predict people's happiness in different cities across the U.S. using different viusalizations.
 
